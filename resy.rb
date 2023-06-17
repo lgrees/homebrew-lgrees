@@ -5,11 +5,11 @@
 class Resy < Formula
   desc "A CLI to easily schedule restaurant reservations in advance."
   homepage "https://github.com/lgrees/resy-cli"
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
-    url "https://github.com/lgrees/resy-cli/releases/download/v0.3.0/resy_0.3.0_darwin_all.tar.gz"
-    sha256 "8eb5cc0af730dd2df3560c02e0e3400406a3a9249343a8b4b542ff72bca6373e"
+    url "https://github.com/lgrees/resy-cli/releases/download/v0.4.0/resy_0.4.0_darwin_all.tar.gz"
+    sha256 "f15e166748b857d870ae362c64c123c7fb2b52e6e1b6f25a5994deae751bb2fb"
 
     def install
       bin.install "resy"
@@ -18,16 +18,16 @@ class Resy < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lgrees/resy-cli/releases/download/v0.3.0/resy_0.3.0_linux_arm64.tar.gz"
-      sha256 "2a301ab1fa0b40dbae293ae84da64f956256910633b2cb3327e26563083f8f74"
+      url "https://github.com/lgrees/resy-cli/releases/download/v0.4.0/resy_0.4.0_linux_arm64.tar.gz"
+      sha256 "7e48f490ec9fad49468aed578dabbe2b72187f5cdc8ebbf8206a389c6f6048a9"
 
       def install
         bin.install "resy"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lgrees/resy-cli/releases/download/v0.3.0/resy_0.3.0_linux_amd64.tar.gz"
-      sha256 "79848f74357a9267f063ed4a639c6ac2880ada5388d0936fb82a8e18edf1fcaa"
+      url "https://github.com/lgrees/resy-cli/releases/download/v0.4.0/resy_0.4.0_linux_amd64.tar.gz"
+      sha256 "c3713e5def239387dfee9a1f0a3cc82e7b865b0e91b2b7206439503acf852188"
 
       def install
         bin.install "resy"
